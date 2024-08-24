@@ -10,8 +10,8 @@ mp_drawing = mp.solutions.drawing_utils
 cap = cv2.VideoCapture(0)
 
 # Language options for 10 languages
-languages = ['English', 'Spanish', 'French', 'German', 'Chinese', 
-             'Japanese', 'Italian', 'Russian', 'Korean', 'Hindi']
+languages = ['English', 'Tamil', 'Telugu', 'Hindi', 'Malayalam', 
+             'Gujarati', 'Marathi', 'Kannada', 'Bengali', 'Punjabi']
 
 # Variable to store the selected language
 selected_language = None
@@ -60,7 +60,7 @@ while True:
 
     # Update the selected language based on the number of fingers
     if 1 <= total_fingers <= 10:
-        selected_language = languages[total_fingers - 1]
+        selected_language = languages[total_fingers]
 
     # Display language options and highlight the selected one
     for i, language in enumerate(languages):
