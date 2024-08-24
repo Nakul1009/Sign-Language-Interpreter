@@ -60,7 +60,7 @@ while True:
 
     # Update the selected language based on the number of fingers
     if 1 <= total_fingers <= 10:
-        selected_language = languages[total_fingers]
+        selected_language = languages[total_fingers-0]
 
     # Display language options and highlight the selected one
     for i, language in enumerate(languages):
