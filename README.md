@@ -17,9 +17,7 @@
 7. [Dependencies / Environment setup](#dependencies--environment-setup)  
 8. [How the model works (summary)](#how-the-model-works-summary)  
 9. [Files of interest](#files-of-interest)  
-10. [Tips for improvement & experiments](#tips-for-improvement--experiments)  
-11. [Contributing](#contributing)  
-12. [License & Credit](#license--credit)
+
 
 ---
 
