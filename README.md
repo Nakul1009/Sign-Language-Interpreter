@@ -166,7 +166,7 @@ pip install -r requirements.txt
 
 - **Input:** Image frames of ISL gestures.  
 - **Preprocessing:** Resize, normalize, and augment.  
-- **Model:** CNN (trained via TensorFlow/Keras).  
+- **Model:** Pretrained Random Forest Model using hand landmarks
 - **Output:** Predicted label → mapped to word → optionally converted to speech.  
 - **Inference:** Done via `output.py` using trained models.
 
@@ -215,46 +215,4 @@ engine.runAndWait()
 
 ---
 
-## Tips for improvement & experiments
 
-- Integrate a webcam-based real-time demo using OpenCV.  
-- Use transfer learning models like **MobileNetV2** or **EfficientNet**.  
-- Add temporal smoothing for video-based prediction.  
-- Extend vocabulary and include full-word gesture detection.  
-- Integrate sentence formation using sequence models.
-
----
-
-## Troubleshooting
-
-- Ensure virtual environment is activated.  
-- Check model loading format (`joblib`, `pickle`, `keras`).  
-- If script names have spaces, rename them safely.  
-- GPU training requires proper CUDA/cuDNN setup.
-
----
-
-## Contributing
-
-1. Fork the repo.  
-2. Create a branch (`feature/your-feature`).  
-3. Make changes and commit.  
-4. Open a Pull Request.
-
----
-
-## License & Credit
-
-- Add a license (MIT, Apache, etc.) to clarify reuse terms.  
-- Credit dataset authors and any referenced works.  
-
----
-
-## Final notes
-
-- Run notebooks in order for reproducibility.  
-- Use the included models for quick demo.  
-- Clean filenames for consistency (`speech_language.py`).  
-- Add `requirements.txt` and real-time inference demo for enhancement.
-
----
